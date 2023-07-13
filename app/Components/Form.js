@@ -1,8 +1,8 @@
 "use client";
 import { useState } from 'react';
-// import Store from './Store';
+import Store from './Store';
 
-const Form = ({ allStores, setAllStores }) => {
+const Form = (props) => {
 
   const [name, setName] = useState('');
   const [minCust, setMinCust] = useState(0);
@@ -12,7 +12,7 @@ const Form = ({ allStores, setAllStores }) => {
 
   const handleSubmit = (e) => {
     // e.preventDefault();
-    setAllStores([...allStores, [name, minCust, maxCust, avgCookie]]);
+    props.setStores([...props.stores, new Store(name, minCust, maxCust, avgCookie)]);
     setShowForm(false);
     }
 
@@ -44,7 +44,7 @@ const Form = ({ allStores, setAllStores }) => {
                     <input pattern="^(\d*\.)?\d+$" placeholder="5.9" min="0.0" required  className="text-slate-950" 
                     onChange={(e) => setAvgCookie(+e.target.value)}/>
                 </section>
-                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" type='submit' onClick={() => handleSubmit()}>Add Store to Table!</button>
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" type='submit' onClick={handleSubmit}>Add Store to Table!</button>
             </fieldset>
         </form>
         )}

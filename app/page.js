@@ -5,17 +5,17 @@ import Header from './Components/Header';
 // import Table from './Components/Table';
 // import Form from './Components/Form';
 import Footer from './Components/Footer';
-import Store from './Components/Store';
-import { NextUIProvider } from '@nextui-org/react';
+// import Store from './Components/Store';
+// import { NextUIProvider } from '@nextui-org/react';
 
 
 export default function Home() {
   return (
     <>
-      <NextUIProvider>
+      {/* <NextUIProvider> */}
         <Header />
         <main>
-          <Store />
+          {/* <Store /> */}
         </main>
         <h2> Store Locations </h2>
         <ul>
@@ -26,7 +26,7 @@ export default function Home() {
           <li>Lima @ 1234 Peru Ave. </li>
         </ul>
         <Footer />
-      </NextUIProvider>
+      {/* </NextUIProvider> */}
     </>
   )
 }
