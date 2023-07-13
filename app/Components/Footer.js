@@ -8,7 +8,7 @@ const Footer = () => {
         Questions or Comments? Contact Us!
       </p>
       <p>
-        Email: <b>Pat@SalmonCookies.Null</b>
+        Email: <b>Pat@SalmonCookies.fake-email-place</b>
       </p>
       <p>
         or phone: <b>555-555-5555</b>

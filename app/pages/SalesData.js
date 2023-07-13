@@ -1,9 +1,9 @@
-import Form from '../Components/Form';
-import Table from '../Components/Table';
+import Form from '../app/Components/Form';
+import Table from '../app/Components/Table';
 import Store from '@/Components/storeModel';
 import { useState } from 'react';
-import Header from '../Components/Header';
-import Footer from '../Components/Footer';
+import Header from '../app/Components/Header';
+import Footer from '../app/Components/Footer';
 
 const SalesData = () => {
 // trying to call the store constructor function in Store component to generate the starting stores
