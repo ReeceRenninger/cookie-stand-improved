@@ -1,8 +1,33 @@
+import Image from 'next/image';
+// import Fish from '../public/fish.png';
+
 const Footer = () => {
   return (
-    <footer>
-      <p>Created by the Great Ones</p>
-    </footer>
+    <>
+      <p>
+        Questions or Comments? Contact Us!
+      </p>
+      <p>
+        Email: <b>Pat@SalmonCookies.fake-email-place</b>
+      </p>
+      <p>
+        or phone: <b>555-555-5555</b>
+      </p>
+      <section class="row">
+        {/* COME BACK TO FIX THIS FUCKING IMAGE -Reece note */}
+      <Image
+      src="/fish.jpg"
+      width={500}
+      height={500}
+      alt="fish"
+    />
+      </section>
+      <section class="row">
+        <p>
+          <a href="sales.html">Click me to see average cookie sales per hour!</a>
+        </p>
+      </section>
+    </>
   );
 }
 
