@@ -6,9 +6,11 @@ import Form from './Components/Form';
 import Footer from './Components/Footer';
 // import Store from './Components/Store';
 
+
 export default function Home() {
   return (
     <>
+
 
       <Header />
       <main>
@@ -25,6 +27,7 @@ export default function Home() {
         <li>Lima @ 1234 Peru Ave. </li>
       </ul>
       <Footer />
+
     </>
   )
 }
