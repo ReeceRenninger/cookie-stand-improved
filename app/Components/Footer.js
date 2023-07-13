@@ -13,7 +13,7 @@ const Footer = () => {
       <p>
         or phone: <b>555-555-5555</b>
       </p>
-      <section class="row">
+      <section className="row">
         {/* COME BACK TO FIX THIS FUCKING IMAGE -Reece note */}
       <Image
       src="/fish.jpg"
@@ -22,11 +22,11 @@ const Footer = () => {
       alt="fish"
     />
       </section>
-      <section class="row">
+      {/* <section className="row">
         <p>
           <a href="sales.html">Click me to see average cookie sales per hour!</a>
         </p>
-      </section>
+      </section> */}
     </>
   );
 }
