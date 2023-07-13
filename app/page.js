@@ -13,6 +13,7 @@ export default function Home() {
       <Table />
       {/* <Store /> */}
       <Form />
+      <Footer />
     </main>
     </>
   )
