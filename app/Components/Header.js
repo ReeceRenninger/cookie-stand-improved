@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <header>
-            <p>The Cookie Stand Shit</p>
+            <h1>The Cookie Stand Shit</h1>
         </header>
     );
 }
