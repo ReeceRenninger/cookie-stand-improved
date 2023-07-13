@@ -1,5 +1,5 @@
 import Image from 'next/image';
-// import Fish from '/public/fish.png';
+// import Fish from '../public/fish.png';
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
       <section class="row">
         {/* COME BACK TO FIX THIS FUCKING IMAGE -Reece note */}
       <Image
-      src="/public/fish.png"
+      src="/fish.jpg"
       width={500}
       height={500}
       alt="fish"
