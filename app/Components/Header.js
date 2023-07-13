@@ -1,8 +1,12 @@
+import Head from 'next/head';
+
 const Header = () => {
     return (
-        <header>
-            <p>The Cookie Stand Shit</p>
-        </header>
+        <div>
+            <Head>
+                <title>SALMONELLA COOKIES</title>
+            </Head>
+        </div>
     );
 }
 

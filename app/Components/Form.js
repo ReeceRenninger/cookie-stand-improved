@@ -1,5 +1,14 @@
+"use client";
+import { useState } from 'react';
 
 const Form = () => {
+
+  const [name, setName] = useState('');
+  const [minCust, setMinCust] = useState(0);
+  const [maxCust, setMaxCust] = useState(0);
+  const [avgCookie, setAvgCookie] = useState(0);
+
+
     return (
         <form id="store-form">
             <fieldset>
@@ -20,7 +29,7 @@ const Form = () => {
                     <label for="avg-input">Avg Cookie Per Customer (required)</label>
                     <input type="number" id="avg-input" name="store_avg" placeholder="5.9" required min="0" class="text-slate-950" />
                 </section>
-                <button class="text-slate-950">Add Store to Table!</button>
+                <button className="text-slate-950">Add Store to Table!</button>
             </fieldset>
         </form>
     );

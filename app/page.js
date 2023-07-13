@@ -1,18 +1,30 @@
 import Image from 'next/image';
+// import React, { useState } from 'react';
 import Header from './Components/Header';
 import Table from './Components/Table';
-import Store from './Components/Store';
 import Form from './Components/Form';
-import Footer from './Compoonents/Footer';
+import Footer from './Components/Footer';
+// import Store from './Components/Store';
 
 export default function Home() {
   return (
-    <main>
+    <>
+
       <Header />
-      <Table />
-      <Store />
-      <Form />
-    </main>
+      <main>
+        <Table />
+        {/* <Store /> */}
+        <Form />
+      </main>
+      <h2> Store Locations </h2>
+      <ul>
+        <li>Seattle @ 1234 Queen Anne Ave.</li>
+        <li>Tokyo @ 5678 Cherry Blossom St.</li>
+        <li>Dubai @ 1234 Dubai Creek Rd.</li>
+        <li>Paris @ 5678 Eiffel Tower Ln.</li>
+        <li>Lima @ 1234 Peru Ave. </li>
+      </ul>
+      <Footer />
     </>
   )
 }
