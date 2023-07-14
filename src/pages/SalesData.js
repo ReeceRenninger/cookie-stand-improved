@@ -28,9 +28,10 @@ const SalesData = () => {
         stores={stores}
         setStores={setStores}
       />
+
       <Footer />
     </>
   )
 }
 
-export default SalesData
+export default SalesData;

@@ -1,5 +1,7 @@
 import Store from "./Store";
 import { useState } from "react";
+import Button from '@mui/material/Button';
+
 
 const Form = (props) => {
 
@@ -18,7 +20,7 @@ const Form = (props) => {
 
     return (
         <>
-            <button style={{ margin: "30px" }} onClick={() => setShowForm(!showForm)}>Add Store</button>
+            <Button variant="contained" style={{ margin: "30px" }} onClick={() => setShowForm(!showForm)}>Add Store</Button>
             {showForm && (
                 <form id="my-form">
                     <fieldset>
@@ -37,7 +39,7 @@ const Form = (props) => {
                         <input type="number" className="form-input" name="avgCookie" onChange={(e) => setAvgCookie(+e.target.value)} />
 
                     </fieldset>
-                    <button id="form-button" type="submit" onClick={handleSubmit}>Submit</button>
+                    <Button id="form-Button" variant="contained" type="submit" onClick={handleSubmit}>Submit</Button>
                 </form>
             )}
         </>
