@@ -23,6 +23,7 @@ const SalesData = () => {
         stores={stores}
         setStores={setStores}
       />
+      
       <Form 
         stores={stores}
         setStores={setStores}
