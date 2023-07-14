@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react";
 
+import * as React from 'react';
+import Paper from '@mui/material/Paper';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TablePagination from '@mui/material/TablePagination';
+import TableRow from '@mui/material/TableRow';
 //!! Chat gpt/ co pilot is the only reason this is here, idk wtf is even happening but its works so im not touching it
 //TODO: NEED TO STILL GENERATE THE DAILY TOTAL FOR ALL LOCATION TOTALS I CANT MATHS AND MY BRAIN IS FRIED FROM THIS WEEK 
 
-const Table = (props) => {
+const StoreTable = (props) => {
 
   const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
@@ -43,27 +52,31 @@ const Table = (props) => {
 
     return (
       <>
-        <table className="table">
-          <thead>
-            <tr className="cell">
-              <th>Location</th>
-              {hours.map((hour, idx) => <th key={`hours-${idx}`}>{hour}</th>)}
-              <th>Daily Location Total</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            {props.stores.map((store, idx) => (
-              <tr key={`store-${idx}`}>
-                <td >{store.name}</td>
-                {store.cookiesBought.map((cookies, idx) => <td key={`${store}-cookie-${idx}`}>{cookies}</td>)}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <Paper sx={{ width: '100%' }}>
+          <TableContainer sx={{ maxHeight: 440 }}>
+            <Table className="table">
+              <TableHead>
+                <TableRow className="cell">
+                  <TableCell>Location</TableCell>
+                  {hours.map((hour, idx) => <TableCell key={`hours-${idx}`}>{hour}</TableCell>)}
+                  <TableCell>Daily Location Total</TableCell>
+
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {props.stores.map((store, idx) => (
+                  <TableRow key={`store-${idx}`}>
+                    <TableCell >{store.name}</TableCell>
+                    {store.cookiesBought.map((cookies, idx) => <TableCell key={`${store}-cookie-${idx}`}>{cookies}</TableCell>)}
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Paper>
       </>
     )
   }
 }
 
-export default Table;
+export default StoreTable;

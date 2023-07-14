@@ -2,7 +2,7 @@ import Footer from '../Components/Footer';
 import Form from '../Components/Form';
 import Header from '../Components/Header';
 import Store from '../Components/Store';
-import Table from '../Components/Table';
+import StoreTable from '../Components/Table';
 import { useState } from 'react';
 
 const SalesData = () => {
@@ -19,7 +19,7 @@ const SalesData = () => {
     <>
       <Header />
       
-      <Table 
+      <StoreTable 
         stores={stores}
         setStores={setStores}
       />
