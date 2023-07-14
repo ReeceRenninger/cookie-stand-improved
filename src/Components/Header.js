@@ -1,29 +1,31 @@
 import Link from 'next/link';
-import Image from 'next/head';
+import Typography from '@mui/material/Typography';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Box from '@mui/material/Box';
 
 const Header = () => {
   return (
-    <header>
-      <div id="salmon fish image">
-        <Image
-          src="/salmon.png"
-          alt="two salmon hanging out"
-          width={200}
-          height={100}
-        />
-      </div>
-      <h1>Welcome to Salmonella Cookies</h1>
-      <nav>
-        <ul>
-          <li >
-            <Link href="/">Home</Link>
-          </li>
-          <li >
-            <Link href="/SalesData">Sales Data</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static">
+          <Toolbar>
+
+            <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
+              Salmonella Cookies
+            </Typography>
+
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <Link href="/">Home</Link>
+            </Typography>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+              <Link href="/SalesData">Sales Data</Link>
+            </Typography>
+
+          </Toolbar>
+        </AppBar>
+      </Box>
+    </>
   );
 }
 
