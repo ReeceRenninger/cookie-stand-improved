@@ -11,13 +11,12 @@ const Header = () => {
         <AppBar position="static">
           <Toolbar>
 
-            <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-              Salmonella Cookies
+            <Typography variant="h4" component="div" sx={{ flexGrow: 20 }}>
+              <Link href="/">Salmonella Cookies Store</Link>
             </Typography>
-
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <Link href="/">Home</Link>
-            </Typography>
+            </Typography> */}
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <Link href="/SalesData">Sales Data</Link>
             </Typography>
