@@ -4,21 +4,6 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <>
-<<<<<<< HEAD
-      <p>
-        Questions or Comments? Contact Us!
-      </p>
-
-      <p>
-        Email: <b>Pat@SalmonCookies.fake-email-place</b>
-      </p>
-      
-      <p>Complaints? Never had any so no worries!</p>
-      <p>
-        or phone: <b>555-555-5555</b>
-      </p>
-      <section className="row">
-=======
       <footer>
         <Box textAlign="center">
           <Grid container spacing={2}>
@@ -49,7 +34,6 @@ const Footer = () => {
             </Typography>
           </Button>
           <section className="row">
->>>>>>> d2f8dff6f3b2087f1ca6e1bdacf81991ae0853e4
 
             <Image
               src="/fish.jpg"

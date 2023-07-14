@@ -32,18 +32,11 @@ const Form = (props) => {
                         '& .MuiTextField-root': { m: 1, width: '25ch' },
                     }}
                     noValidate
-<<<<<<< HEAD
-                    autoComplete="off">
-                        
-                    <fieldset>
-                        <legend>Store Info</legend>
-=======
                     autoComplete="off"
                 >
                     <Box width="100%" height="100%" display="flex" alignItems="center" justifyContent="center" margin="5px">
                         <fieldset>
                             <legend>Store Info</legend>
->>>>>>> d2f8dff6f3b2087f1ca6e1bdacf81991ae0853e4
 
                             <Label>Name: </Label>
                             <TextField
