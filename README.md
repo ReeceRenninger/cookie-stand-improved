@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JS Framework Comparative Analysis
 
-## Getting Started
+Framework Name Next
+Research Conducted By: The Helpful Heather, The Keen Kaeden, The Impressive Ike, The Resourceful Reece
+Overall Score and Comments
+Score (Out of 10): 7
+General Comments
 
-First, run the development server:
+Describe the stack (front-end only? full stack?), database, efficiency, etc. Describe the general usability and learnability
+Pros
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+    Item 1
+    Item 2
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Cons
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+    Item 1
+    Item 2
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Ratings and Reviews
+Documentation
 
-## Learn More
+Thoughts go here
+Systems Requirements
 
-To learn more about Next.js, take a look at the following resources:
+Above and beyond ‘node’ and ‘linux’, what dependencies or core requirements exist for this framework? Is it easily deployable to the cloud? Does it require a certain database?
+Ramp-Up Projections
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+How long would/should it take a team of mid-junior developers to become productive?
+Community Support and Adoption levels
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+How popular is this framework? What big companies are running on it? How is it “seen” in the general JS community? Is there an active community of developers supporting and growing it?
+Links and Resources
 
-## Deploy on Vercel
+    framework
+    docs
+    examples/tutorials
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Code Demos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    live/running application
+    code repository
+
+Operating Instructions
+
+If someone were to download your repo (above), what steps do they need to take to run the application
+
+    npm start
+    Endpoint: /foo/bar/
+        Returns a JSON object with abc in it.
+    Endpoint: /bing/zing/
+        Returns a JSON object with xyz in it.
+

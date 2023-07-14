@@ -1,7 +1,8 @@
+// modified this to allow path imports in js files and could modify the structure to match to what I am used to using with normal React
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src*"]
     }
   }
 }
