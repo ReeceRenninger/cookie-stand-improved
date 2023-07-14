@@ -10,16 +10,16 @@ const Header = () => {
           alt="two salmon hanging out"
           width={200}
           height={100}
-          />
+        />
       </div>
-          <h1>Welcome to Salmonella Cookies</h1>
+      <h1>Welcome to Salmonella Cookies</h1>
       <nav>
         <ul>
           <li >
-            <Link  href="/">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li >
-            <Link  href="/SalesData">Sales Data</Link>
+            <Link href="/SalesData">Sales Data</Link>
           </li>
         </ul>
       </nav>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 //!! Chat gpt/ co pilot is the only reason this is here, idk wtf is even happening but its works so im not touching it
+//TODO: NEED TO STILL GENERATE THE DAILY LOCATION TOTALS I CANT MATHS AND MY BRAIN IS FRIED FROM THIS WEEK 
 const Table = (props) => {
   //rendered is to track if the table has been rendered yet, if it has then it will update the table with the new store 
   const [rendered, setRendered] = useState(false);
@@ -10,6 +11,7 @@ const Table = (props) => {
   const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 
   useEffect(() => {
+    //creates the new store using props passed down, built in timer to give a small loading window so we know its working
     if (rendered) {
       setTracker(false);
       const newStore = props.stores[props.stores.length - 1];
@@ -17,9 +19,9 @@ const Table = (props) => {
       newStore.getCookiesBought();
       setTimeout(() => {
         setTracker(true);
-        
-      }, 500);
 
+      }, 500);
+      //if the new store isnt being added then we just generate the table as normal 
     } else {
       props.stores.forEach(store => store.cookiesBought = []);
       props.stores.forEach(store => store.getCookiesBought());

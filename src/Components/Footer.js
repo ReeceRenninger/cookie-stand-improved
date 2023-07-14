@@ -14,13 +14,13 @@ const Footer = () => {
         or phone: <b>555-555-5555</b>
       </p>
       <section className="row">
-       
-      <Image
-      src="/fish.jpg"
-      width={500}
-      height={500}
-      alt="fish"
-    />
+
+        <Image
+          src="/fish.jpg"
+          width={500}
+          height={500}
+          alt="fish"
+        />
       </section>
     </>
   );

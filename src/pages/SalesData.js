@@ -1,9 +1,9 @@
-import Form from '../Components/Form';
-import Table from '../Components/Table';
-import Store from '../Components/Store';
-import { useState } from 'react';
-import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import Form from '../Components/Form';
+import Header from '../Components/Header';
+import Store from '../Components/Store';
+import Table from '../Components/Table';
+import { useState } from 'react';
 
 const SalesData = () => {
 
@@ -23,7 +23,7 @@ const SalesData = () => {
         stores={stores}
         setStores={setStores}
       />
-      
+
       <Form 
         stores={stores}
         setStores={setStores}

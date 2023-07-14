@@ -17,8 +17,18 @@ export default function Home() {
       <main>
         <section id="store">
           <h2>Salmonella Cookies Store</h2>
-          <h3>Check out all our sweet merchandise!</h3>
+        <section id='family'>
+          <h2>Family Owned and Operated!</h2>
+          <Image
+                src="/family.jpg"
+                alt="Picture of a family"
+                width={420}
+                height={300}
+                />
+          <p className='family-pitch'>You always want the best for your family, and thats why you should buy from Salmonella Cookies. We have been a family run business since 1901. Providing Salmonella for over 120 years across the globe!</p>       
+        </section>
           <div className='front-section'>
+                <h3>Check out all our sweet merchandise!</h3>
            
               <Image
                 src="/cutter.jpeg"
@@ -45,16 +55,6 @@ export default function Home() {
               <p>Salmon Shirts!</p>
           
           </div>
-        </section>
-        <section id='family'>
-          <h2>Family Friendly!</h2>
-          <Image
-                src="/family.jpg"
-                alt="Picture of a family"
-                width={420}
-                height={300}
-              />
-          <p className='family-pitch'>You always want the best for your family, and thats why you should buy from Salmonella Cookies. We have been a family run business since 1901. Providing Salmonella for over 100 years across the globe!</p>       
         </section>
         <section id='store-locations'>
           <h2>Locations WorldWide: Hours of Operation are 0600 to 2000 local time</h2>

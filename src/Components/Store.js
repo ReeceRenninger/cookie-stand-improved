@@ -1,7 +1,7 @@
 // built outside of class to call into the function being used, WILL NOT WORK WITHIN THE CLASS, RANDOMCUST BECOMES UNDEFINED TO OTHER FUNCTION CALLING IT
-const randomCust = (min, max) =>{
+const randomCust = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
-  }
+}
 
 class Store {
     constructor(name, minCust, maxCust, avgCookie) {
@@ -13,21 +13,16 @@ class Store {
     }
 
     getCookiesBought() {
-      let cookiesTotal = 0;
-      for (let i = 0; i < 14; i++) {
-        let cookies = Math.floor(randomCust(this.minCust, this.maxCust) * this.avgCookie);
-        this.cookiesBought.push(cookies);
-        cookiesTotal += cookies;
-      }
-      this.cookiesBought.push(cookiesTotal);
+        let cookiesTotal = 0;
+        for (let i = 0; i < 14; i++) {
+            let cookies = Math.floor(randomCust(this.minCust, this.maxCust) * this.avgCookie);
+            this.cookiesBought.push(cookies);
+            cookiesTotal += cookies;
+        }
+        this.cookiesBought.push(cookiesTotal);
     }
-  
-  }
-  
-  export default Store;
 
-    
-//     return (
-//         <p onClick={() => doMath(allStores)}>Store Placeholder</p>
-//     );
-// }
+}
+
+export default Store;
+
