@@ -22,7 +22,9 @@ const Form = (props) => {
 
     return (
         <>
-            <Button variant="contained" style={{ margin: "30px" }} onClick={() => setShowForm(!showForm)}>Add Store</Button>
+            <Box width="100%" height="100%" display="flex" alignItems="center" justifyContent="center">
+                <Button variant="contained" style={{ margin: "30px" }} onClick={() => setShowForm(!showForm)}>Add Store</Button>
+            </Box>
             {showForm && (
                 <Box
                     component="form"
@@ -32,39 +34,43 @@ const Form = (props) => {
                     noValidate
                     autoComplete="off"
                 >
-                    <fieldset>
-                        <legend>Store Info</legend>
+                    <Box width="100%" height="100%" display="flex" alignItems="center" justifyContent="center" margin="5px">
+                        <fieldset>
+                            <legend>Store Info</legend>
 
-                        <Label>Name: </Label>
-                        <TextField
-                            required
-                            id="outlined-required"
-                            label="Required"
-                            defaultValue="" type="text" className="form-input" onChange={(e) => setName(e.target.value)} />
+                            <Label>Name: </Label>
+                            <TextField
+                                required
+                                id="outlined-required"
+                                label="Required"
+                                defaultValue="" type="text" className="form-input" onChange={(e) => setName(e.target.value)} />
 
-                        <Label>Min Customers: </Label>
-                        <TextField
-                            required
-                            id="outlined-required"
-                            label="Required"
-                            defaultValue="" type="number" className="form-input" name="minCust" onChange={(e) => setMinCust(+e.target.value)} />
+                            <Label>Min Customers: </Label>
+                            <TextField
+                                required
+                                id="outlined-required"
+                                label="Required"
+                                defaultValue="" type="number" className="form-input" name="minCust" onChange={(e) => setMinCust(+e.target.value)} />
 
-                        <Label>Max Customers: </Label>
-                        <TextField
-                            required
-                            id="outlined-required"
-                            label="Required"
-                            defaultValue="" type="number" className="form-input" name="maxCust" onChange={(e) => setMaxCust(+e.target.value)} />
+                            <Label>Max Customers: </Label>
+                            <TextField
+                                required
+                                id="outlined-required"
+                                label="Required"
+                                defaultValue="" type="number" className="form-input" name="maxCust" onChange={(e) => setMaxCust(+e.target.value)} />
 
-                        <Label> Avg Cookies Sold:</Label>
-                        <TextField
-                            required
-                            id="outlined-required"
-                            label="Required"
-                            defaultValue="" type="number" className="form-input" name="avgCookie" onChange={(e) => setAvgCookie(+e.target.value)} />
+                            <Label> Avg Cookies Sold:</Label>
+                            <TextField
+                                required
+                                id="outlined-required"
+                                label="Required"
+                                defaultValue="" type="number" className="form-input" name="avgCookie" onChange={(e) => setAvgCookie(+e.target.value)} />
 
-                    </fieldset>
-                    <Button id="form-Button" variant="contained" type="submit" onClick={handleSubmit}>Submit</Button>
+                        </fieldset>
+                    </Box>
+                    <Box width="100%" height="100%" display="flex" alignItems="center" justifyContent="center">
+                        <Button id="form-Button" variant="contained" type="submit" onClick={handleSubmit}>Submit</Button>
+                    </Box>
                 </Box>
             )}
         </>

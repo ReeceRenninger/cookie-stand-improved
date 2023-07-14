@@ -43,6 +43,24 @@ const StoreTable = (props) => {
     //why is this showing an error with just props.stores, apparently need isLoaded here as well
   }, [rendered, props.stores]);
 
+  const totalsRow = () => {
+    let h = 0;
+    let grandTotal = 0;
+    let final = [];
+    while (h < hours.length) {
+      let hourlyTotal = 0;
+      for (let i = 0; i < props.stores.length; i++) {
+        hourlyTotal += props.stores[i].cookiesBought[h];
+        grandTotal += props.stores[i].cookiesBought[h];
+      }
+      final.push(hourlyTotal)
+      h++;
+    }
+    final.push(grandTotal)
+    return final;
+  }
+
+
   //this gives us a brief load screen while table is rendering new store add from the form
   if (!tracker) {
     return <div>Loading...</div>;
@@ -70,6 +88,12 @@ const StoreTable = (props) => {
                     {store.cookiesBought.map((cookies, idx) => <TableCell key={`${store}-cookie-${idx}`}>{cookies}</TableCell>)}
                   </TableRow>
                 ))}
+                <TableRow key={`store-total`}>
+                  <TableCell>Grand Totals</TableCell>
+                  {totalsRow().map((totals, idx) => 
+                    <TableCell key={`${totals}-cookie-${idx}`}>{totals}</TableCell>)}
+                </TableRow>
+
               </TableBody>
             </Table>
           </TableContainer>
