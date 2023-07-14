@@ -3,7 +3,7 @@
 Framework Name Next
 Research Conducted By: The Helpful Heather, The Keen Kaeden, The Impressive Ike, The Resourceful Reece
 Overall Score and Comments
-Score (Out of 10): 7
+Score (Out of 10): 8
 General Comments
 
 Describe the stack (front-end only? full stack?), database, efficiency, etc. Describe the general usability and learnability

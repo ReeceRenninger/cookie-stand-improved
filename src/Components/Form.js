@@ -30,8 +30,8 @@ const Form = (props) => {
                         '& .MuiTextField-root': { m: 1, width: '25ch' },
                     }}
                     noValidate
-                    autoComplete="off"
-                >
+                    autoComplete="off">
+                        
                     <fieldset>
                         <legend>Store Info</legend>
 
