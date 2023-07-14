@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+//!! Chat gpt/ co pilot is the only reason this is here, idk wtf is even happening but its works so im not touching it
 const Table = (props) => {
 
   const [isLoaded, setIsLoaded] = useState(false);
@@ -23,7 +24,7 @@ const Table = (props) => {
       props.stores.forEach(store => store.getCookiesBought());
       setIsLoaded(true);
     }
-    //whyyyy is this an error wtf
+    //why is this showing an error with just props.stores, apparently need isLoaded here as well
   }, [isLoaded, props.stores]);
 
   if (!tracker) {
@@ -32,10 +33,8 @@ const Table = (props) => {
 
   if (tracker) {
 
-
     return (
       <>
-
         <table className="table">
           <thead>
             <tr className="cell">

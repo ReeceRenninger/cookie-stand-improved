@@ -1,11 +1,9 @@
-'use client';
-
 import Form from '../Components/Form';
-// import Table from '../Components/Table';
+import Table from '../Components/Table';
 import Store from '../Components/Store';
+import { useState } from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import { useState } from 'react';
 
 const SalesData = () => {
 
@@ -21,10 +19,10 @@ const SalesData = () => {
     <>
       <Header />
       
-      {/* <Table  */}
-      {/* //   stores={stores}
-      //   setStores={setStores}
-      // /> */}
+      <Table 
+        stores={stores}
+        setStores={setStores}
+      />
       <Form 
         stores={stores}
         setStores={setStores}
