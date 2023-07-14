@@ -14,7 +14,8 @@ class Store {
 
     getCookiesBought() {
         let cookiesTotal = 0;
-        for (let i = 0; i < 14; i++) {
+        //15 hours of operation for the table to properly display totals at right hour
+        for (let i = 0; i < 15; i++) {
             let cookies = Math.floor(randomCust(this.minCust, this.maxCust) * this.avgCookie);
             this.cookiesBought.push(cookies);
             cookiesTotal += cookies;
