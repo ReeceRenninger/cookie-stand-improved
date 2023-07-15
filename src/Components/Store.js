@@ -1,5 +1,3 @@
-// built outside of class to call into the function being used, WILL NOT WORK WITHIN THE CLASS, RANDOMCUST BECOMES UNDEFINED TO OTHER FUNCTION CALLING IT
-
 const randomCust = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }

@@ -1,12 +1,5 @@
 # LAB - CodeFellows Class 40
 
-<<<<<<< HEAD
-Framework Name Next
-Research Conducted By: The Helpful Heather, The Keen Kaeden, The Impressive Ike, The Resourceful Reece
-Overall Score and Comments
-Score (Out of 10): 8
-General Comments
-=======
 ## Project: Javascript and Web Frameworks
 
 ### Authors: Reece Renninger, Kaeden O'meara, Heather Holcomb, Ike Steoger
@@ -65,7 +58,6 @@ For now I have none and do not require one -->
 Score (Out of 10):
 
 ##### General Comments
->>>>>>> d2f8dff6f3b2087f1ca6e1bdacf81991ae0853e4
 
 Describe the stack (front-end only? full stack?), database, efficiency, etc. Describe the general usability and learnability
 

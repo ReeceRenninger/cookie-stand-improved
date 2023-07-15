@@ -3,7 +3,6 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Image from 'next/image';
 import Text from '@mui/material/Typography';
-// import './globals.css'
 
 //Card import from mui
 import Card from '@mui/material/Card';
@@ -24,7 +23,6 @@ export default function Home() {
       <Header />
       <main>
         <section id="store">
-          {/* <Typography variant="h3">Salmonella Cookies Store</Typography> */}
           <section id='family'>
             <Box width="100%" height="100%" display="flex" alignItems="center" justifyContent="center">
               <Typography variant="h4">Family Owned and Operated!</Typography>
@@ -46,8 +44,6 @@ export default function Home() {
             <h3>Check out all our sweet merchandise!</h3>
             </Box>
             <Box width="100%" height="100%" display="flex" alignItems="center" justifyContent="space-around">
-              {/* <Grid container spacing={2}> */}
-                {/* <Grid item> */}
                   <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                       <CardMedia
@@ -67,9 +63,7 @@ export default function Home() {
                       </CardContent>
                     </CardActionArea>
                   </Card>
-                {/* </Grid> */}
 
-                {/* <Grid item> */}
                   <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                       <CardMedia
@@ -89,9 +83,7 @@ export default function Home() {
                       </CardContent>
                     </CardActionArea>
                   </Card>
-                {/* </Grid> */}
-
-                {/* <Grid item> */}
+            
                   <Card sx={{ maxWidth: 345 }}>
                     <CardActionArea>
                       <CardMedia
@@ -111,11 +103,7 @@ export default function Home() {
                       </CardContent>
                     </CardActionArea>
                   </Card>
-                {/* </Grid> */}
-
-              {/* </Grid> */}
-
-
+           
             </Box>
 
 
