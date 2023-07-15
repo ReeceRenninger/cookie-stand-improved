@@ -7,10 +7,7 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
-import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
-//!! Chat gpt/ co pilot is the only reason this is here, idk wtf is even happening but its works so im not touching it
-//TODO: NEED TO STILL GENERATE THE DAILY TOTAL FOR ALL LOCATION TOTALS I CANT MATHS AND MY BRAIN IS FRIED FROM THIS WEEK 
 
 const StoreTable = (props) => {
 
@@ -21,12 +18,11 @@ const StoreTable = (props) => {
   //the tracker is to make sure the table only renders once, otherwise it will render every time the state changes
   const [tracker, setTracker] = useState(true);
 
-
   useEffect(() => {
     //creates the new store using props passed down, built in timer to give a small loading window so we know its working
     if (rendered) {
       setTracker(false);
-      //newStore is the new store being added, we need to set cookies bought to an empty array so we can generate the new store, props.stores is the array of stores passed down from the parent and we are adding the new store to the end of the array
+      // newStore is the new store being added, we need to set cookies bought to an empty array so we can generate the new store, props.stores is the array of stores passed down from the parent and we are adding the new store to the end of the array
       const newStore = props.stores[props.stores.length - 1];
       newStore.cookiesBought = [];
       newStore.getCookiesBought();
@@ -59,7 +55,6 @@ const StoreTable = (props) => {
     final.push(grandTotal)
     return final;
   }
-
 
   //this gives us a brief load screen while table is rendering new store add from the form
   if (!tracker) {
